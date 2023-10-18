@@ -1,0 +1,44 @@
+.pie-chartBox {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pie-chartBox h1 {
+	font-size: 24px;
+}
+
+.pie-chartBox .chart {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.pie-chartBox .options {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	font-size: 14px;
+}
+.pie-chartBox .options .option {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.pie-chartBox .options .option .title {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.pie-chartBox .options .option .dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}

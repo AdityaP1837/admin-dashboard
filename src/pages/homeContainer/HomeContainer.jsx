@@ -3,11 +3,16 @@ import './HomeContainer.css'
 import TopBox from "../../components/homePage/topBox/TopBox";
 import ChartBox from "../../components/homePage/chartBox/ChartBox";
 import {
+	barChartBoxRevenue,
+	barChartBoxVisit,
 	chartBoxConversion,
 	chartBoxProduct,
 	chartBoxRevenue,
 	chartBoxUser,
 } from "../../data";
+import BarChartBox from "../../components/homePage/barChart/BarChartBox";
+import PieChartBox from "../../components/homePage/pieChartBox/PieChartBox";
+import AreaGraphBox from "../../components/homePage/areaGraphBox/areaGraphBox";
 
 const HomeContainer = () => {
 	return (
@@ -21,16 +26,24 @@ const HomeContainer = () => {
 			<div className="box box3">
 				<ChartBox {...chartBoxRevenue} />
 			</div>
-			<div className="box box4"></div>
+			<div className="box box4">
+				<PieChartBox />
+			</div>
 			<div className="box box5">
 				<ChartBox {...chartBoxProduct} />
 			</div>
 			<div className="box box6">
 				<ChartBox {...chartBoxConversion} />
 			</div>
-			<div className="box box7">box 7</div>
-			<div className="box box8">box 8</div>
-			<div className="box box9">box 9</div>
+			<div className="box box7">
+				<AreaGraphBox />
+			</div>
+			<div className="box box8">
+				<BarChartBox {...barChartBoxVisit} />
+			</div>
+			<div className="box box9">
+				<BarChartBox {...barChartBoxRevenue} />
+			</div>
 		</div>
 	);
 };
