@@ -1,0 +1,45 @@
+.topBox h1{
+    margin-bottom: 20px;
+}
+
+.topBox .topBox-lists{
+    list-style: none;
+}
+
+.topBox .topBox-lists li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topBox .topBox-lists li .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.topBox .topBox-lists li .left img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.topBox .topBox-lists li .left .dealsInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.topBox .topBox-lists li .left .dealsInfo h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topBox .topBox-lists li .left .dealsInfo span{
+    font-size: 12px;
+}
+
+.topBox .topBox-lists li .right span{
+    font-weight: 500;
+}
